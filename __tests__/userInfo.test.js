@@ -14,7 +14,7 @@ describe('UserInfo', () => {
   });
 
   test('User enters age.', () => {
-    newUser.addAge("Not an age");
+    newUser.addAge(27);
     expect(newUser.age).toEqual(27);
   });
 });
