@@ -8,19 +8,26 @@ describe('UserInfo', () => {
     newUser = new UserInfo();
   });
 
-  test('User enters name.', () => {
+  test("Returns the user's name.", () => {
     newUser.addName("James");
     expect(newUser.name).toEqual("James");
   });
 
-  test('User enters age.', () => {
+  test("Returns the user's age.", () => {
     newUser.addAge(27);
     expect(newUser.age).toEqual(27);
   });
 
-  test('User chooses planet', () => {
+  test("Returns the user's selected planet.", () => {
     newUser.addPlanet("Mercury");
     expect(newUser.planet).toEqual("Mercury");
+  })
+
+  test("Returns the user's age on the planet Mercury.", () => {
+    newUser.ageAge(27);
+    newUser.addPlanet("Mercury");
+    ageMercury();
+    expect(this.ageOnPlanet).toEqual(112.5)
   })
 
 });
