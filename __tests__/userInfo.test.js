@@ -7,4 +7,9 @@ describe('UserInfo', () => {
     let newUser = new UserInfo("James");
     expect(newUser.name).toEqual("James");
   });
+
+  test('UserInfo', () => {
+    let newUser = new UserInfo("not a number");
+    expect(newUser.age).toEqual(27);
+  });
 });
