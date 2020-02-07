@@ -4,7 +4,7 @@ import {exportAllDeclaration} from '@babel/types';
 describe('UserInfo', () => {
 
   test('User enters name.', () => {
-    let newUser = new UserInfo(5);
-    expect(newUser.name).equal("");
+    let newUser = new UserInfo(28);
+    expect(newUser.name).toEqual("");
   });
 });
