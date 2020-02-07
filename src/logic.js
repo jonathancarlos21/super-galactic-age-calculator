@@ -2,6 +2,7 @@ export class UserInfo {
   constructor(name, age) {
     this.name = name;
     this.age = age;
+    this.planet = "";
     this.lifeExpectancy = 0;
     this.ageOnPlanet = 0;
   }
@@ -16,6 +17,6 @@ export class UserInfo {
 
   ageMercury() {
     let ageOnMercury = this.age/.24
-    ageOnMercury.toFixed(0);
+    this.ageOnPlanet = ageOnMercury.toFixed(1);
   }
 }
