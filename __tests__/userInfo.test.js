@@ -18,8 +18,8 @@ describe('UserInfo', () => {
     expect(newUser.age).toEqual(27);
   });
 
-  test('User enters planet', () => {
-    newUser.addPlanet("Mercury");
+  test('User chooses planet', () => {
+    newUser.addPlanet(5);
     expect(newUser.planet).toEqual("Mercury");
   })
 
