@@ -1,7 +1,7 @@
 export class UserInfo {
-  constructor() {
-    this.name = "";
-    this.age = "";
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
     this.lifeExpectancy = "";
     this.planet = "";
     this.ageOnPlanet = 0;
