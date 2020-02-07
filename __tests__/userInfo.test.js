@@ -19,7 +19,7 @@ describe('UserInfo', () => {
   });
 
   test('User chooses planet', () => {
-    newUser.addPlanet(5);
+    newUser.addPlanet("Mercury");
     expect(newUser.planet).toEqual("Mercury");
   })
 
