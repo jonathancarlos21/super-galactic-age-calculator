@@ -8,4 +8,10 @@ export class UserInfo {
     this.expectancyOnPlanet = 0;
     this.yearsPastExpectancy = 0;
   }
+
+  addName(name) {
+    this.name = name
+  }
+
+  
 }

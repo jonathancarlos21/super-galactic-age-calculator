@@ -8,8 +8,8 @@ describe('UserInfo', () => {
     expect(newUser.name).toEqual("James");
   });
 
-  test('UserInfo', () => {
-    let newUser = new UserInfo("not a number");
-    expect(newUser.age).toEqual(27);
+  test('User enters age.', () => {
+    let newUser = new UserInfo("");
+    expect(newUser.age).toEqual("");
   });
 });
