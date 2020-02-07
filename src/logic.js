@@ -10,8 +10,10 @@ export class UserInfo {
   }
 
   addName(name) {
-    this.name = name
+    this.name = name;
   }
 
-  
+  addAge(age) {
+    this.age = age;
+  }
 }

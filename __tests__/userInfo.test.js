@@ -2,14 +2,19 @@ import {UserInfo} from '../src/logic';
 import {exportAllDeclaration} from '@babel/types';
 
 describe('UserInfo', () => {
+  let newUser; 
+
+  beforeEach(() => {
+    newUser = new UserInfo();
+  });
 
   test('User enters name.', () => {
-    let newUser = new UserInfo("James");
+    newUser.addName("James");
     expect(newUser.name).toEqual("James");
   });
 
   test('User enters age.', () => {
-    let newUser = new UserInfo("");
-    expect(newUser.age).toEqual("");
+    newUser.addAge("Not an age");
+    expect(newUser.age).toEqual(27);
   });
 });
