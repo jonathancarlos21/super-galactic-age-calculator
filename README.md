@@ -13,11 +13,11 @@ _This application will determine the age of a user based on the solar years of p
 | Behavior | Input | Output |
 |----------|:-----:|--------|
 | User enters their age. | 27 | **Age**: _27_ |
-| User selects a planet. | Mars | **Planet**: _Mars(1.88 Earth Years)_ |
-| User enters their age and selects a planet. | 27 & Mars | **Age on Earth**: _27_<br> **Planet**: _Mars(1.88 Earth Years_)<br> **Age on Mars**: _14_ |
-| User enters life expectancy on based on their demographic. | 80 | **Life Expectancy on Earth**: _80_ |
-| User enters their life expectancy and selects a planet. | 80 & Mars | **Life Expectancy on Mars**: _42_ |
-| User enters their age and life expectancy based on their demographic. | 77 & 65 | **Life Expectancy on Earth**: _65_<br> **Years lived past life expectancy**: _12_ |
+| User selects a planet. | Mars | **Planet**: Mars(1.88 Earth Years) |
+| User enters their age and selects a planet. | 27 & Mars | **Age on Earth**: 27<br> **Planet**: Mars(1.88 Earth Years)<br> **Age on Mars**: 14 |
+| User enters life expectancy on based on their demographic. | 80 | **Life Expectancy on Earth**: 80 |
+| User enters their life expectancy and selects a planet. | 80 & Mars | **Life Expectancy on Mars**: 42 |
+| User enters their age and life expectancy based on their demographic. | 77 & 65 | **Life Expectancy on Earth**: 65<br> **Years lived past life expectancy**: 12 |
 | User enters age, life expectancy based on their demographic, and a planet. | 77, 65 & Mars | **Life Expectancy on Mars**: 34<br> **Years Lived Past Life Expectancy**: 6
 
 ## **Setup/Installation**
