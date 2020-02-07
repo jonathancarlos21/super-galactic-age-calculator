@@ -17,4 +17,10 @@ describe('UserInfo', () => {
     newUser.addAge(27);
     expect(newUser.age).toEqual(27);
   });
+
+  test('User enters age and planet.', () => {
+    newUser.addAge(27);
+    newUser.ageMercury("Mercury");
+    expect(newUser.ageOnPlanet).toEqual(112.5);
+  });
 });
