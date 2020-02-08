@@ -30,4 +30,10 @@ export class UserInfo {
     if (this.planet === "Venus")
     this.ageOnPlanet = parseInt(ageOnVenus);
   }
+
+  ageMars() {
+    let ageOnMars = this.age/1.88;
+    if (this.planet === "Mars")
+    this.ageOnPlanet = parseInt(ageOnMars);
+  }
 }
