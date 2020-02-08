@@ -24,4 +24,10 @@ export class UserInfo {
     if (this.planet === "Mercury")
     this.ageOnPlanet = parseInt(ageOnMercury);
   }
+
+  ageVenus() {
+    let ageOnVenus = this.age/.62;
+    if (this.planet === "Venus")
+    this.ageOnPlanet = parseInt(ageOnVenus);
+  }
 }
