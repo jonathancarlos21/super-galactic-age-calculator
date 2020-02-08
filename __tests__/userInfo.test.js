@@ -24,10 +24,10 @@ describe('UserInfo', () => {
   })
 
   test("Returns the user's age on the planet Mercury.", () => {
-    newUser.addAge(27);
+    newUser.addAge(26);
     newUser.addPlanet("Mercury");
     newUser.ageMercury();
-    expect(newUser.ageOnPlanet).toEqual(112.5);
+    expect(newUser.ageOnPlanet).toEqual(112);
   });
 
 });
