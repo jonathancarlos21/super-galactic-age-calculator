@@ -1,8 +1,8 @@
 export class UserInfo {
-  constructor(name, age) {
+  constructor(name, planet) {
     this.name = name;
-    this.age = age;
-    this.planet = "";
+    this.age = 0;
+    this.planet = planet;
     this.lifeExpectancy = 0;
     this.ageOnPlanet = 0;
   }
@@ -15,8 +15,13 @@ export class UserInfo {
     this.age = age;
   }
 
+  addPlanet(planet) {
+    this.planet = planet;
+  }
+
   ageMercury() {
-    let ageOnMercury = this.age/.24
+    let ageOnMercury = this.age/.24;
+    if (this.planet === "Mercury")
     this.ageOnPlanet = ageOnMercury.toFixed(1);
   }
 }
