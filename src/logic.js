@@ -22,6 +22,6 @@ export class UserInfo {
   ageMercury() {
     let ageOnMercury = this.age/.24;
     if (this.planet === "Mercury")
-    this.ageOnPlanet = ageOnMercury.toFixed(1);
+    this.ageOnPlanet = parseInt(ageOnMercury);
   }
 }
