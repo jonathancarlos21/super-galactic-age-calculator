@@ -37,4 +37,11 @@ describe('UserInfo', () => {
     expect(newUser.ageOnPlanet).toEqual(43);
   });
 
+  test("Returns the user's age on the planet Mars.", () => {
+    newUser.addAge(27);
+    newUser.addMars("Mars");
+    newUser.ageMars();
+    expect(newUser.ageOnPlanet).toEqual(14);
+  });
+
 });
