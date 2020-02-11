@@ -8,12 +8,12 @@ describe('UserInfo', () => {
     newUser = new UserInfo();
   });
 
-  test("Returns the user's name.", () => {
+  test("Returns the user's input name.", () => {
     newUser.addName("James");
     expect(newUser.name).toEqual("James");
   });
 
-  test("Returns the user's age.", () => {
+  test("Returns the user's input age.", () => {
     newUser.addAge(27);
     expect(newUser.age).toEqual(27);
   });
@@ -51,4 +51,8 @@ describe('UserInfo', () => {
     expect(newUser.ageOnPlanet).toEqual(2)
   }); 
 
+  test("Returns the user's input life expectancy.", () => {
+    newUser.addLifeExpectancy(80);
+    expect(newUser.lifeExpectancy).toEqual(80);
+  })
 });
