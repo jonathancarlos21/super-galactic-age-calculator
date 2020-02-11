@@ -52,7 +52,7 @@ describe('UserInfo', () => {
   }); 
 
   test("Returns the user's input life expectancy.", () => {
-    newUser.addLifeExpectancy(80);
+    newUser.addLifeExpectancy(79);
     expect(newUser.lifeExpectancy).toEqual(80);
   })
 });
