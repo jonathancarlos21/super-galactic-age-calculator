@@ -55,4 +55,11 @@ describe('UserInfo', () => {
     newUser.addLifeExpectancy(80);
     expect(newUser.lifeExpectancy).toEqual(80);
   })
+
+  test("Returns the user's life expectancy based on planet selected.", () => {
+    new.addLifeExpectancy(80);
+    new.addPlanet("Mercury");
+    new.expectancyMercury();
+    expect(newUser.expectancyOnPlanet).toEqual(333)
+  })
 });
