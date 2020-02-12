@@ -56,10 +56,17 @@ describe('UserInfo', () => {
     expect(newUser.lifeExpectancy).toEqual(80);
   })
 
-  test("Returns the user's life expectancy based on planet selected.", () => {
-    new.addLifeExpectancy(80);
-    new.addPlanet("Mercury");
-    new.expectancyMercury();
+  test("Returns the user's life expectancy on the planet Mercury.", () => {
+    newUser.addLifeExpectancy(80);
+    newUser.addPlanet("Mercury");
+    newUser.expectancyMercury();
     expect(newUser.expectancyOnPlanet).toEqual(333)
-  })
+  });
+
+  test("Returns the user's life expectancy on the planet Venus.", () => {
+    newUser.addLifeExpectancy(80);
+    newUser.addPlanet("Venus");
+    newUser.expectancyVenus();
+    expect(newUser.expectancyOnPlanet).toEqual(129);
+  });
 });
