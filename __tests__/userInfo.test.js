@@ -75,5 +75,12 @@ describe('UserInfo', () => {
     newUser.addPlanet("Mars");
     newUser.expectancyMars();
     expect(newUser.expectancyOnPlanet).toEqual(42);
-  })
+  });
+
+  test("Returns the user's life expectancy on the planet Jupiter.", () => {
+    newUser.addLifeExpectancy(88);
+    newUser.addPlanet("Jupiter");
+    newUser.expectancyJupiter();
+    expect(newUser.expectancyOnPlanet).toEqual(6);
+  });
 });
