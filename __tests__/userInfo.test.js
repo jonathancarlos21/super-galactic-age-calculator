@@ -69,4 +69,11 @@ describe('UserInfo', () => {
     newUser.expectancyVenus();
     expect(newUser.expectancyOnPlanet).toEqual(129);
   });
+
+  test("Returns the user's life expectancy on the planet Mars.", () => {
+    newUser.addLifeExpectancy(83);
+    newUser.addPlanet("Mars");
+    newUser.expectancyMars();
+    expect(newUser.expectancyOnPlanet).toEqual(42);
+  })
 });
