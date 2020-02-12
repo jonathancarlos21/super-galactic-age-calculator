@@ -92,8 +92,8 @@ describe('UserInfo', () => {
   });
 
   test("Returns the number of years the user has left to live.", () => {
-    newUser.addAge(28);
-    newUser.addLifeExpectancy(82);
+    newUser.addAge(27);
+    newUser.addLifeExpectancy(83);
     newUser.yearsUntilBigSleep();
     expect(newUser.yearsLeftToLive).toEqual(55);
   });
