@@ -85,8 +85,8 @@ describe('UserInfo', () => {
   });
 
   test("Returns the number of years the user has lived past life expectancy.", () => {
-    newUser.addAge(69);
-    newUser.addLifeExpectancy(63);
+    newUser.addAge(70);
+    newUser.addLifeExpectancy(62);
     newUser.yearsBeyondExpectancy();
     expect(newUser.yearsPastExpectancy).toEqual(7);
   });
