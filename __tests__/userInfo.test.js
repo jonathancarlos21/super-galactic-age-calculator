@@ -74,14 +74,14 @@ describe('UserInfo', () => {
     expect(newUser.yearsPastExpectancy).toEqual(81);
   });
 
-  // test("Returns the user's years left to live on the planet Mars.", () => {
-  //   newUser.addAge(30);
-  //   newUser.addLifeExpectancy(80);
-  //   newUser.addPlanet("Mars");
-  //   newUser.ageMars();
-  //   newUser.expectancyMars();
-  //   expect(newUser.yearsLeftToLive).toEqual(27);
-  // });
+  test("Returns the user's years left to live on the planet Mars.", () => {
+    newUser.addAge(20);
+    newUser.addLifeExpectancy(80);
+    newUser.addPlanet("Mars");
+    newUser.ageMars();
+    newUser.expectancyMars();
+    expect(newUser.yearsLeftToLive).toEqual(27);
+  });
 
   // test("Returns the user's years past expectancy on the planet Jupiter.", () => {
   //   newUser.addAge(80);
