@@ -57,7 +57,7 @@ describe('UserInfo', () => {
   })
 
   test("Returns the user's years left to live on the planet Mercury.", () => {
-    newUser.addAge(20);
+    newUser.addAge(30);
     newUser.addLifeExpectancy(80);
     newUser.addPlanet("Mercury");
     newUser.ageMercury();
