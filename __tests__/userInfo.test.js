@@ -56,45 +56,39 @@ describe('UserInfo', () => {
     expect(newUser.lifeExpectancy).toEqual(80);
   })
 
-  test("Returns the user's life expectancy on the planet Mercury.", () => {
+  test("Returns the user's years left to live on the planet Mercury.", () => {
+    newUser.addAge(30);
     newUser.addLifeExpectancy(80);
     newUser.addPlanet("Mercury");
+    newUser.ageMercury();
     newUser.expectancyMercury();
-    expect(newUser.expectancyOnPlanet).toEqual(333)
+    expect(newUser.yearsLeftToLive).toEqual(208);
   });
 
-  test("Returns the user's life expectancy on the planet Venus.", () => {
-    newUser.addLifeExpectancy(80);
+  test("Returns the user's years past expectancy on the planet Venus.", () => {
+    newUser.addAge(80);
+    newUser.addLifeExpectancy(30);
     newUser.addPlanet("Venus");
+    newUser.ageVenus();
     newUser.expectancyVenus();
-    expect(newUser.expectancyOnPlanet).toEqual(129);
+    expect(newUser.yearsPastExpectancy).toEqual(81);
   });
 
-  test("Returns the user's life expectancy on the planet Mars.", () => {
+  test("Returns the user's years left to live on the planet Mars.", () => {
+    newUser.addAge(30);
     newUser.addLifeExpectancy(80);
     newUser.addPlanet("Mars");
+    newUser.ageMars();
     newUser.expectancyMars();
-    expect(newUser.expectancyOnPlanet).toEqual(42);
+    expect(newUser.yearsLeftToLive).toEqual(27);
   });
 
-  test("Returns the user's life expectancy on the planet Jupiter.", () => {
-    newUser.addLifeExpectancy(80);
+  test("Returns the user's years past expectancy on the planet Jupiter.", () => {
+    newUser.addAge(80);
+    newUser.addLifeExpectancy(30);
     newUser.addPlanet("Jupiter");
+    newUser.ageJupiter();
     newUser.expectancyJupiter();
-    expect(newUser.expectancyOnPlanet).toEqual(6);
-  });
-
-  test("Returns the number of years the user has lived past life expectancy.", () => {
-    newUser.addAge(70);
-    newUser.addLifeExpectancy(63);
-    newUser.yearsBeyondExpectancy();
-    expect(newUser.yearsPastExpectancy).toEqual(7);
-  });
-
-  test("Returns the number of years the user has left to live.", () => {
-    newUser.addAge(27);
-    newUser.addLifeExpectancy(82);
-    newUser.yearsUntilBigSleep();
-    expect(newUser.yearsLeftToLive).toEqual(55);
+    expect(newUser.yearsPastExpectancy).toEqual(4);
   });
 });
