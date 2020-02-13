@@ -96,14 +96,4 @@ export class UserInfo {
         this.yearsLeftToLive = (this.expectancyOnPlanet - this.ageOnPlanet);
     }
   }
-
-  // yearsBeyondExpectancy() {
-  //   if (this.age && this.ageOnPlanet > this.lifeExpectancy && this.expectancyOnPlanet)
-  //   this.yearsPastExpectancy = (this.age - this.lifeExpectancy);
-  // }
-
-  // yearsUntilBigSleep() {
-  //   if (this.age < this.lifeExpectancy)
-  //   this.yearsLeftToLive = (this.lifeExpectancy - this.age);
-  // }
 }
