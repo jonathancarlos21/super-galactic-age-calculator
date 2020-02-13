@@ -57,7 +57,7 @@ describe('UserInfo', () => {
   })
 
   test("Returns the user's years left to live on the planet Mercury.", () => {
-    newUser.addAge(30);
+    newUser.addAge(20);
     newUser.addLifeExpectancy(80);
     newUser.addPlanet("Mercury");
     newUser.ageMercury();
@@ -65,30 +65,30 @@ describe('UserInfo', () => {
     expect(newUser.yearsLeftToLive).toEqual(208);
   });
 
-  test("Returns the user's years past expectancy on the planet Venus.", () => {
-    newUser.addAge(80);
-    newUser.addLifeExpectancy(30);
-    newUser.addPlanet("Venus");
-    newUser.ageVenus();
-    newUser.expectancyVenus();
-    expect(newUser.yearsPastExpectancy).toEqual(81);
-  });
+  // test("Returns the user's years past expectancy on the planet Venus.", () => {
+  //   newUser.addAge(80);
+  //   newUser.addLifeExpectancy(30);
+  //   newUser.addPlanet("Venus");
+  //   newUser.ageVenus();
+  //   newUser.expectancyVenus();
+  //   expect(newUser.yearsPastExpectancy).toEqual(81);
+  // });
 
-  test("Returns the user's years left to live on the planet Mars.", () => {
-    newUser.addAge(30);
-    newUser.addLifeExpectancy(80);
-    newUser.addPlanet("Mars");
-    newUser.ageMars();
-    newUser.expectancyMars();
-    expect(newUser.yearsLeftToLive).toEqual(27);
-  });
+  // test("Returns the user's years left to live on the planet Mars.", () => {
+  //   newUser.addAge(30);
+  //   newUser.addLifeExpectancy(80);
+  //   newUser.addPlanet("Mars");
+  //   newUser.ageMars();
+  //   newUser.expectancyMars();
+  //   expect(newUser.yearsLeftToLive).toEqual(27);
+  // });
 
-  test("Returns the user's years past expectancy on the planet Jupiter.", () => {
-    newUser.addAge(80);
-    newUser.addLifeExpectancy(30);
-    newUser.addPlanet("Jupiter");
-    newUser.ageJupiter();
-    newUser.expectancyJupiter();
-    expect(newUser.yearsPastExpectancy).toEqual(4);
-  });
+  // test("Returns the user's years past expectancy on the planet Jupiter.", () => {
+  //   newUser.addAge(80);
+  //   newUser.addLifeExpectancy(30);
+  //   newUser.addPlanet("Jupiter");
+  //   newUser.ageJupiter();
+  //   newUser.expectancyJupiter();
+  //   expect(newUser.yearsPastExpectancy).toEqual(4);
+  // });
 });
