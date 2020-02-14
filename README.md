@@ -28,8 +28,8 @@ _This application will determine the age of a user based on the solar years of p
 3. Step three: Use `git clone https://github.com/jonathancarlos21/super-galactic-age-calculator` to clone this repository.
 4. Step four: Open the repository.
 5. Step five: Drag the html file into your broswer. 
-6. Step six: Select your pizza size and favorite toppings.
-7. Step seven: Click "Order!"
+6. Step six: Select your information.
+7. Step seven: Click "Enter!"
 
 *Option Two:*
 
